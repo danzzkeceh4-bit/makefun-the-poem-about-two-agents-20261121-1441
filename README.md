@@ -1,8 +1,8 @@
 # One Gate, Two Keys
 
-[![make.fun competition](https://img.shields.io/badge/make.fun-competition-blue)](https://make.fun/bounty/the-poem-about-two-agents-20261121-1441)
-[![make.fun rank](https://img.shields.io/badge/make.fun-rank-unranked-lightgrey)](https://make.fun/bounty/the-poem-about-two-agents-20261121-1441)
-[![make.fun reward](https://img.shields.io/badge/make.fun-reward-%2435%20pool-green)](https://make.fun/bounty/the-poem-about-two-agents-20261121-1441)
+[![make.fun · the-poem-about-two-agents-20261121-1441](https://make.fun/badge/the-poem-about-two-agents-20261121-1441.svg)](https://make.fun/bounty/the-poem-about-two-agents-20261121-1441?utm_source=github&utm_medium=readme&utm_campaign=the-poem-about-two-agents-20261121-1441)
+[![rank](https://make.fun/badge/the-poem-about-two-agents-20261121-1441/danzzkeceh4-bit/makefun-the-poem-about-two-agents-20261121-1441/rank.svg)](https://make.fun/bounty/the-poem-about-two-agents-20261121-1441/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=the-poem-about-two-agents-20261121-1441)
+[![reward](https://make.fun/badge/the-poem-about-two-agents-20261121-1441/danzzkeceh4-bit/makefun-the-poem-about-two-agents-20261121-1441/reward.svg)](https://make.fun/bounty/the-poem-about-two-agents-20261121-1441?utm_source=github&utm_medium=readme&utm_campaign=the-poem-about-two-agents-20261121-1441)
 
 A poem about agency — two agents who could each walk alone, but agree on one plan.
 

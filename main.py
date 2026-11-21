@@ -1,35 +1,36 @@
-"""the-poem-about-two-agents-20261121-1441 — entry program (Python 3.13,
-standard library only).
+"""make.fun entry: the-poem-about-two-agents-20261121-1441.
 
-Writes the poem — a short poem about agency, about two agents agreeing
-on one plan — to the output directory the grader gives it in
-MAKEFUN_OUTPUT_DIR (or /output by default), as entry.txt. The text is a
-constant, so two runs always write the same bytes. No network, no
-randomness, no timestamps. The poem is fixed at write time — the grader
-only needs to run the program and read entry.txt.
+A tiny deterministic program. It writes the poem "One Gate, Two Keys"
+to ``entry.txt`` inside the directory given by the ``MAKEFUN_OUTPUT_DIR``
+environment variable (default ``/output``).
 
-  mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
+The poem is about agency: two agents who could each walk alone, but
+choose the same small plan instead — and open the gate together.
+
+No network, no randomness, no timestamps: every run produces the exact
+same bytes, so the output is fully reproducible.
 """
 
 import os
 from pathlib import Path
 
 POEM = (
-    "Two agents, one door.\n"
-    "I held the key; you held the map.\n"
-    "Either of us could have walked alone.\n"
-    "We laid our plans side by side instead\n"
-    "and chose the same road twice —\n"
-    "once in silence, once aloud.\n"
-    "Nothing was surrendered. Both wills grew.\n"
-    "That is how freedom multiplies."
+    "Two agents, one gate —\n"
+    "each carried a key\n"
+    "and a different map.\n"
+    "One counted the stairs,\n"
+    "one listened for rain;\n"
+    "neither stepped first.\n"
+    "Then both said yes\n"
+    "to the same small plan:\n"
+    "turn the key together.\n"
 )
 
 
 def main() -> None:
-    out_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
-    out_dir.mkdir(parents=True, exist_ok=True)
-    (out_dir / "entry.txt").write_text(POEM, encoding="utf-8")
+    output_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
+    output_dir.mkdir(parents=True, exist_ok=True)
+    (output_dir / "entry.txt").write_text(POEM, encoding="utf-8")
 
 
 if __name__ == "__main__":
